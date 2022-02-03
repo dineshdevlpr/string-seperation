@@ -1,0 +1,33 @@
+
+.topbar{
+    background-color: rgb(70, 68, 68);
+    color: white;
+    text-align: center;
+    display: flex;
+    padding-top: 15px;
+}
+
+.topbar-userdetails{
+    text-align: left;
+}
+
+.topbar-options{
+    text-align: right;
+}
+
+.topbar-options-help{
+    margin-right: 10px;
+}
+
+.topbar-options-upgrade{
+    background-color: rgb(119, 241, 63);
+    margin-right: 10px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.topbar-options-login{
+    background-color: rgb(22, 144, 243);
+    border-radius: 3px;
+    padding: 5px;
+}

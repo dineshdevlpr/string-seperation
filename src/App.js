@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar/navbar';
+import PostChain from './components/post-chain/post-chain';
+import Postform from './components/postform/postform';
+import Topbar from './components/topbar/topbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Topbar />
+      <div className='container row col-12 entire-content'>
+        <div className='container col-3 navbar-content'>
+          <Navbar/>
+        </div>
+        <div className='container col-6 postform-content'>
+          <Postform/>
+        </div>
+        <div className='container col-3 postchain-content'>
+          <PostChain/>
+        </div>
+      </div>
     </div>
   );
 }
